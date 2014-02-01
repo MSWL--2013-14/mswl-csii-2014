@@ -22,3 +22,10 @@ For instance: a student may choose to write a report on the governance of the pr
 Review the horizontal reports of three other students. Students will have to retrieve a copy of other reports and include enhancements, comments, suggestions, etc.
 
 The deadlines are however the ones given in this academic year's calendar: So, we will have a first deadline with the horizontal report a couple of weeks before the final deadline (Wednesday March 19th) and a final deadline on April 3rd.
+## Students
+
+* Amal Roumi  (@roumia) - Final Report about licenses  .
+* Daniel Gámez (@gamezdaniel) - Final Report about .......
+* Sergio Arroutbi Braojos (@sarroutbi) - Final Report about .......
+* Jose .......(@janague )- Final Report about .......
+
