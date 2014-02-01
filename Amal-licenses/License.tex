@@ -1,0 +1,310 @@
+
+\documentclass[11pt]{article} % Default font size is 12pt, it can be changed here
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\usepackage{graphicx} % Required for including pictures
+\usepackage{hyperref}
+\usepackage{array}
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\linespread{1.2} % Line spacing
+
+\graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
+\usepackage{url}
+
+% to remove coloured boxes around the links 
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+}
+\newenvironment{myindentpar}[1]%
+ {\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+ }
+ {\end{list}}
+%----------------------------------------------------------------------------------------
+\begin{document}
+%----------------------------------------------------------------------------------------
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\center % Center everything on the page
+\includegraphics{urjc} \\[0.5cm] % Include logo
+\textsc{\LARGE \\Universidad Rey Juan Carlos}\\[1cm] % Name of your university/college
+\textsc{\Large Master in Libre Software}\\[0.5cm] % Major heading such as course name
+\HRule \\[1.5cm]
+{ \huge \bfseries Case Study II.}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Authors:}\\
+Amal \textsc{Roumi}\\ % Your name
+\end{flushleft}
+\end{minipage}
+%~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Gregorio  \textsc{Robles} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[1.5cm]
+{\large \today}\\[1.8cm] % Date, change the \today to a set date if you want to be precise
+\textsc CC BY-NC-SA 3.0\\[0.2cm]
+\includegraphics[scale=0.5]{license} \\ % Include license
+{\small http://creativecommons.org/licenses/by-nc-sa/3.0}\\
+\mbox{}
+
+\end{titlepage}
+%  table of contents
+%----------------------------------------------------------------------------------------
+\tableofcontents
+
+%================================================================================
+
+\par As final work for the course of “Case Studies I” in 2013/2014 in Master of Libre software (Universidad Rey Juan Carlos), we are requested to write horizontal  report one topic we choose in each projects that have been presented in this subject,  my choice was “ License”.  
+\section{Aspects of Licenses}
+
+In any discussion of open source licensing, the first thing that becomes apparent is that there seem to be many different terminology, we will talk about them in the following lists
+\\*
+
+{\bf Free software, open source software} 
+Software that granting the four freedom-rights. users are free to run, copy, distribute, study, change and improve the software.
+This term was first coined by Richard Stallman, who codified it in the GNU General Public License (GPL), and who founded the Free Software Foundation\footnote{\url { http://www.fsf.org/}} . "free software" covers almost exactly the same range of software as "open source"which was coined by the Open Source Initiative\footnote{\url{http://www.opensource.org/}} .Open source software and free software typically describe the same programs, the two terms are commonly used interchangeably. And it is said that the difference between them is philosophical rather than practical and that the difference between the two terms themselves is mainly a matter of marketing rather than substance.
+
+{\bf DFSG-compliant} 
+Compliant with the Debian Free Software Guidelines (DFSG )  \footnote{\url{http://www.debian.org/social_contract}}
+which is a set of guidelines that the Debian Project uses to determine whether a software license is a free software license, which in turn is used to determine whether a piece of software can be included in Debian.
+  
+{\bf OSI-approved} 
+Approved by the Open Source Initiative. The OSI's definition of open source software is based on the Debian Free Software Guidelines,  the OSI maintains a list of all licenses it has ever approved, at \url {http://www.opensource.org/licenses/}, 
+
+{ \bf Proprietary, closed-source}
+Software distributed under exclusive legal right of the copyright holder with the intent that the licensee is given the right to use the software only under certain conditions, and restricted from other uses, such as modification, sharing, studying, redistribution
+
+{ \bf Contributor License Agreements (CLA)}
+Define the terms under which intellectual property has been contributed to a company/project and thereby allow them to defend the project should there be a legal dispute regarding the software at some future time. 
+The purpose of a CLA is to
+ Ensure that the guardian of a project's outputs has the necessary ownership or grants of rights over all contributions to allow them to distribute under the chosen license.
+Protect community members (both developers and users) from intellectual property lawsuits if needed.
+We have to mention that the license agreement does not transfer copyright ownership and does not change the contributors rights to use their own contributions for any other purpose.
+%================================================================================
+\section{Some common open source license.}
+%------------------------------------------------
+
+{\bf GNU General Public License (GPL)}
+Written by :Richard Stallman of the Free Software Foundation (FSF) for the GNU project.
+\\* 
+Versions:There are three different versions of the GPL License .\\* 
+The latest version was GPL v3.0 at June 2007\\* 
+The (GPL) is probably one of the most commonly used licenses for open-source projects. The GPL grants and guarantees a wide range of rights to developers who work on open-source projects. Basically, it allows users to :
+\begin{enumerate}
+\item Copy the software
+\item Distribute the software however you want.
+\item Charge a fee to distribute the software.
+\item Make whatever modifications to the software you want.
+\end{enumerate}
+%------------------------------------------------
+ 
+{\bf BSD licenses}
+ Originally created by the University of Berkeley. BSD licenses represent a family of permissive free software licenses that have fewer restrictions on distribution compared to other free software licenses.
+ Among different versions of the license two versions : the New BSD License/Modified BSD License, and the Simplified BSD License/FreeBSD License. Both have been verified as GPL-compatible free software licenses, and have been accepted as open source licenses by the Open Source Initiative \\* 
+%------------------------------------------------
+
+{\bf MIT License}
+Written by : Massachusetts Institute of Technology (MIT)\\* 
+The latest version was at 1988\\* 
+It is shortest and probably broadest of all the popular open-source licenses. Its terms are very loose and more permissive than most other licenses. The MIT License is the least restrictive license out there. It basically says that anyone can do whatever they want with the licensed material, as long as it’s accompanied by the license.\\* 
+%------------------------------------------------
+
+{\bf  Apache License}
+Written by : Apache Software Foundation (ASF) \\* 
+Versions:There are three different versions of the Apache License .\\* 
+The latest version was Apache v2.0 at 2004\\* 
+The Apache License, Version 2.0, grants a number of rights to users. These rights can be applied to both copyrights and patents. 
+Because some licenses can be applied only to copyrights and not patents, this flexibility would be an obvious factor in a patent developer’s choice of license
+Here are some on what the Apache License allows:\\* 
+Rights are perpetual, non-exclusive ,, worldwide, irrevocable.\\* 
+Rights are granted for no fee or royalty.\\* 
+%------------------------------------------------
+
+{\bf The Mozilla Public License (MPL)}\\* 
+Written by : Mozilla Foundation .\\* 
+Versions:There are three different versions of the MPL License .\\* 
+The latest version was MPL v2.0 at 2012\\* 
+It is characterized as a hybridization of the modified BSD license and GNU General Public License (GPL) that seeks to balance the concerns of proprietary and open source developers.
+%================================================================================
+
+\section{Briefs about each project and their licenses.}
+%------------------------------------------------
+\subsection{FreeBSD} % Sub-section
+
+"Not Yet" \\
+
+ 
+%------------------------------------------------
+\subsection{GNOME} % Sub-section
+
+Website:\url {http://www.gnome.org}\\*
+GNOME is a user-friendly and completely free desktop environment and graphical user interface that runs on top of a computer operating system. developed by both volunteers and paid contributors, the largest corporate contributor being Red Hat. \\*
+GNOME is part of the GNU Project and can be used with various Unix-like operating systems.\\
+{\bf Licensing}
+
+
+GNOME is licensed under the LGPL for its libraries, and the GNU General public licenses (GPL) for its applications.
+
+ the GNU General Public License (GNU GPL) used by most GNU programs,but some times use  other free software licenses that are only compatible with the GNU GPL for GNU software 
+\footnote {\url {http://www.gnu.org/licenses/license-list.html\#SoftwareLicenses}}
+
+\centerline{ The  following diagram show the license that are compatible with the GPL v3} 
+\centerline{\includegraphics[scale=0.4]{gplv3-compatibility}}
+{ \tiny  source \url {http://upload.wikimedia.org/wikipedia/en/5/52/Quick-guide-gplv3-compatibility.png}}
+
+
+%------------------------------------------------
+
+\subsection{KDE} % Sub-section
+
+Website:\url {http://www.kde.org}\\
+KDE is a Windowing Manager and Graphical User Interface , producing an integrated set of cross-platform applications designed to run on GNU/Linux, FreeBSD, Solaris, Microsoft Windows, and OS X systems.\\*
+The KDE project serves as an umbrella project for many standalone applications and smaller projects that are based on KDE technology. These include Calligra Suite, digiKam, Rekonq, K3b, and many others.
+All of the software that KDE produces is a Free and Open Source Software \\
+
+{L\bf icensing} \\*
+KDE, lies a graphical toolkit and fully featured programming language called Qt.
+
+The KDE Free Qt foundation was created in 1998 under liberal BSD license which guarantees that Qt " which was dual-licensed under the free and open source Q Public License (QPL) \footnote {\url{http://opensource.org/licenses/QPL-1.0}}  and a commercial license for proprietary software developers" would fall under a variant of BSD license should Trolltech cease to exist or no free version of Qt be released during period of time.
+ In 2000 Trolltech made the Unix version of the Qt libraries available under the GNU General Public License (GPL), in addition to the QPL.
+After Qt 4.5, proprietary applications can legally use the open source Qt version.
+Because Qt available under the LGPL version 2.1.\\*
+ KDE Platform consists of the libraries and services needed to run KDE applications. The libraries must be licensed under one of the LGPL, BSD license, MIT License and X11 license.\\*
+KDE's adoption of the Fiduciary Licence Agreement (FLA) The FLA is a copyright assignment that allows Free Software projects to assign their copyright to single organisation or person. This enables projects to ensure their legal maintainability, including important issues such as preserving the ability to re-license and certainty to have sufficient rights to enforce licences in court.
+
+
+%------------------------------------------------
+\subsection{OSOR} % Sub-section
+Website \url {http://joinup.ec.europa.eu/page/osor.eu}\\*
+OSOR is an acronym standing for “Open Source Observatory and Repository” for European public administrations
+Project financed by E.C. and managed by IDABC \footnote {stands for:
+Interoperable Delivery of pan-European eGovernment Services to Public Administrations,
+Businesses and Citizens}
+Supported by the Member State administrations.\\*
+
+ OSOR.eu platform, and in particular the OSOR.eu Repository and the OSOR.eu Forge are aimed to support and encourage use of OSS or FLOSS for Free, Libre and Open Source Software that are of particular use for public administrations in Europe. \\
+In December 2011, Osor.eu was migrated to a new collaborative platform: Joinup.
+
+{\bf OSOR Main Services \footnote {\url{http://joinup.ec.europa.eu/sites/default/files/OSOR_dissemination-Tampere-2008.pdf}}}
+
+\begin{enumerate}
+   \item Information platform
+  \begin{enumerate}
+		\item Website delivering news around OSS
+		 \item -  Providing guidance on legal, technical, organizational issues around OSS and collaboration.
+	\end {enumerate}
+   \item Registry and Repository
+	\begin{enumerate}
+		\item -  Facilities for download and uploading and search and retrieval of public sector software .
+		\item Providing visibility for and connect to other European collaboration platforms.
+	\end {enumerate}
+   \item  Platform for collaboration 
+	\begin{enumerate}
+		\item - Supporting collaborative cross-border projects (hosting communities)
+	\end {enumerate}
+  \item EUPL: European Union Public License
+	\begin{enumerate}
+		\item Legal instrument for the EC and the EU public sector
+	\end{enumerate}
+\end {enumerate}
+%------------------------------------------------
+
+\subsection{WebKit} % Sub-section
+Website \url {http://www.webkit.org}
+Webkit is an open source web browser engine that was original author by KDE and developed  by Apple , Google ,adobe.. \\*
+Currently powers browsers such as Google Chrome, Apple Safari, the default IOS browser, and the default Android browser, opera,blackberry \\*
+WebKit's HTML and JavaScript code originally began as a fork of the KHTML and KJS libraries from KDE, and has now been further developed by individuals from KDE, Apple, Google, Nokia, Bitstream, RIM, Igalia, and others. OS X, Windows, GNU/Linux, and some other Unix-like operating systems are supported by the project.\\*
+{\bf Licensing}
+WebKit's WebCore and JavaScriptCore components are available under the GNU Lesser General Public License  \footnote{\url{http://www.gnu.org/copyleft/lesser.html}} , and the rest of WebKit is available under a BSDl licenses \footnote{\url{http://www.webkit.org/coding/bsd-license.html }}
+
+%------------------------------------------------
+%plan
+%------------------------------------------------
+\subsection{GMozilla - Mozilla Hispano Communities / Firefox OS} % Sub-section
+Website Mozilla \url {http://www.mozilla.org/en-US/} \\*
+Website Firefox OS  \url {http://www.mozilla.org/en-US/firefox/partners/}\\*
+Mozilla Foundation is anon-profit organization that exists to support the open source Mozilla project.Was founded by the Netscape-affiliated Mozilla Organization in July 2003, the organization controls Mozilla trademarks and copyrights. \\*
+The Mozilla Foundation describes itself as "a non-profit organization that promotes openness, innovation and participation on the Internet ”  
+Mozilla is a free software community uses, develops, spreads and supports Mozilla products  like Firefox browser ,Firefox Mobile, the Firefox OS mobile operating system, the bug tracking system Bugzilla and the free email application Thunderbird .
+The community is supported by the Mozilla Foundation.\\*
+Firefox OS 
+Is a linux-based open source operating system for smart phone and table computers. 
+It is designed to allow HTML5 applications to communicate directly with the device's hardware using JavaScript. It has been demonstrated on Android-compatible smartphones, and the Raspberry Pi.
+The first smartphones running Firefox OS should be released 2013 .\\
+%------------------------------------------------
+{\bf Licensing}
+All Mozilla software is open source and free software under Mozilla Public License(MPL)
+{\it summary of the Mozilla license policy:}
+\begin{itemize}
+\item New files in, or modifications to, an existing, consistently-licensed area of code should be under the same license as the existing code.
+\item New projects should be under the MPL 2.0 or Apache 2.0 
+\end{itemize}
+\centerline{ The following flowchart provides a summary of Mozilla Foundation License Policy} 
+\centerline{\includegraphics[scale=0.3]{chart}}
+\centerline \small    source : \url {http://www.mozilla.org/MPL/license-policy-flowchart.png}
+%------------------------------------------------
+
+
+
+\subsection{Wikipedia} % Sub-section
+"Not Yet" \\
+
+%------------------------------------------------
+
+\subsection {Como ganarse la vida con el SL: Aventuras y desventuras de un hacker}
+"Not Yet" \\
+
+
+\newpage
+%====================================================================
+\section{Conclusions}
+"Not Yet" \\
+
+%----------------------------------------------------------------------------------------
+\begin{table}[ht]
+\caption{Comparison between the license in derived work}
+\centering
+\begin{tabular}{c  m{3cm}  m{4cm} m{3cm}}
+\hline\hline
+
+License name & Different name in  DW & DW remains OS & Change license type for DW \\ [3ex]
+
+\hline
+Apache License 2.0&Yes&No&Yes \\
+(GPLv2)& yes but should mark changes & yes only if published& yes for compatible \\
+LGPL&Yes& same as in GPL, but can link compiled libraries & yes for compatible \\
+(MPL)1.1 & Yes & No & No \\
+BSD License & Yes & No & Yes \\ [1ex]
+\hline\hline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
+
+%----------------------------------------------------------------------------------------
+
+%	 References
+%----------------------------------------------------------------------------------------
+\newpage
+
+\centerline \small {* DW for derived work}
+\newpage 
+{\bf References}\\*
+	\begin {enumerate}
+	\item \url {http://www.oss-watch.ac.uk/resources/cla}
+	\item \url {http://www.liferay.com/web/bryan.cheung/blog/-/blogs/liferay-adopting-the-lgpl-license}
+	\item \url {http://www.zaragoza.es/ciudad/conocimiento/conocimiento.htm}
+	\item\url {http://joinup.ec.europa.eu}
+	\end {enumerate}
+\newpage
+
+
+\end{document}
