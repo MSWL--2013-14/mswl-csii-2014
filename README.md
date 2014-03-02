@@ -1,4 +1,3 @@
-
 ##MSWL - Case Studies II (2014).
 We are requested to write horizontal report one topic we choose in each projects that have been presented in this subject. The talks in this subject will show the projects vertically, i.e., they will contain information regarding the history, the goals, the members, the licenses, the related industry, the technologies, the governance, etc. of the project. Each student has to select one of these aspects and write a report on how the selected aspect is handled in all the projects that have been presented in the subject.
 
@@ -22,7 +21,7 @@ Available video talks:
 
 ## Students
 
-* Amal Roumi  (@roumia) - Final Report about licenses   for "Case Studies I"
+* Amal Roumi  (@roumia) - Final Report about History   for "Case Studies I"
 * Daniel Gámez (@gamezdaniel) - Final Report about .......
 * Sergio Arroutbi Braojos (@sarroutbi) - Final Report about .......
 * Jose Alberto Navas Guerrero (@janague )- Final Report about .......
