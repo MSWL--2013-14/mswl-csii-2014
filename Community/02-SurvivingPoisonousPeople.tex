@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES II: Surviving poisonous people in Open Source Project}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+On this Technical Talk, dated on June 2007, Ben Collin-Sussman and Brian W Fitzpatrick, who are Senior Software engineer in Chicago, and work on different Open Source projects, analyze how communities can cope with those poisonous people who some times appear on the Open Source communities.\\
+\\
+Speakers consider protection of the comunity to be vital, in order to let the comunity focusing on the objectives on the project and avoid disruptions.
+In order to do so, speakers propose a set of stages, four in particular, that the project managers need to consider in order to face these disrupting elements. The four stages proposed are:
+\begin{itemize}\itemsep0pt
+\item{Comprehension}
+\item{Fortification}
+\item{Identification}
+\item{Disinfection (considering this how to name the fact of getting them out the comunity)}
+\end{itemize}
+
+\section{Introduction}
+Poisonous people appear sporadically on the Open Source project development. These kind of people can be identified, as they normally appear in order to disrupt the normal evolution of the project, by carrying out actions such as:
+\begin{itemize}\itemsep0pt
+\item{Trying to distract the comunity with unimportant issues}
+\item{Performing emotional drain on the comunity}
+\item{Attempting needless infighting}
+\end{itemize}
+An important aspect highlighted by the lecturers, is the clarification on how sometimes poisonous people act in that way without willing it. However, it is important to identify the disrupting elements and try to fix the issue as soon as possible.\\
+\\
+Lecturers start by recommending Karl's Fogel ``Producing Open Source Software'' book, which goes into technical and no technical details about how Open Source Software must be produced, by showing practical examples on two very important Open Source projets, such as Subversion and Apache.\\
+\\
+During the presentation, lecturers face different steps , shown below, that must be considered to try to protect against poisonous people, and if the ``infection'' is produced, how to get them out.\\
+
+\section{Fortifying the comunity}
+Lecturers talk about the importance of fortifying the comunity. Get the comunity focused, keep a good direction, mantain a pleasant environment, avoid ``Bikesheds''.
+  Basically, four elements are considered the most important to keep the comunity fortified, as much fortified, the better. Aspects such as:
+\begin{itemize}\itemsep0pt
+\item{Politeness}
+\item{Respect}
+\item{Trust}
+\item{Humility}
+\item{Focus}
+\end{itemize}
+Apart from previous aspects, it is important, for the comunity, to have a mission. Project managers must limit the scope and set a clear direction. e.g: "Have a compelling replacement to CVS".\\
+\\
+The other important thing is to focus on the mailing lists netiquette rules. Aspects such as:
+\begin{itemize}\itemsep0pt
+\item{Don't rehash old discussion}
+\item{Don't reply to all the mails}
+\item{Avoid writing on capital letters}
+\item{Avoid personal referrals}
+\item{Use of correct language}
+\end{itemize}
+and in general all the rules described on the RFC 1855, are important as well to keep a polite environment in mail lists and other project channels.
+\section{Keep Project History}
+It is important to maintain the focus of the comunity. This aspect is highlighted by the lecturers. However, lecturers also insist on the necessity of ``Not losing the Project's history'', as a way of transparency and decission making help. The project management must keep documentation on different areas such as:
+\begin{itemize}\itemsep0pt
+\item{Design decissions}
+\item{Bug fix history}
+\item{Mistakes made}
+\item{Lessons learnt}
+\item{Code changes}
+\end{itemize}
+The main idea is to enforce the transparency and way of working of the comunity, and protect it from territoriality of project areas, considering that Open Source projects comunity members change as time goes by, and the work tasks and other aspects must be documented.
+
+\section{Healthy code collaboration}
+In lecturers opinion, code collaboration, revision and validation is considered to be one of the most important aspects for acomplishment of the comunity project objectives. Some considerations must be taken into to achieve them:
+\begin{itemize}\itemsep0pt
+\item{Commit emails are the best way for people to know what is doing each-other}
+\item{Code reviews are there for people to know what you are working on. If they have interest or knowledge on the stuff, they will review them, but if not, at least they know the area you are now working on}
+\item{Big changes: on new branches for easier review}
+\item{Increase the "bus factor". Try to spread the core knowledge as much as possible}
+\item{Dont allow names on files (AUTHORS.txt, whatever, but no on the file). This avoids territoriality on the files}
+\end{itemize}
+
+\section{Well-defined processes}
+Processes are important, more important as the project grows up. Important aspects that must be faced for a community to protect against disruptures and external confussion, are, for instance:
+\begin{itemize}\itemsep0pt
+\item{Bug fixing process}
+\item{Test of release images}
+\item{Patch Proposal / Reviewing / Acceptance}
+\item{New committers advertising}
+\item{Define committers permission politics}
+\end{itemize}
+
+\section{Voting}
+Contrary to what should be thinking regarding voting decissions on the Open Source Projects, voting should be considered as a last resort.
+Each comunity is a little bit particular regarding voting and internal democracy. There are very different approaches regarding this topic. However, lecturers consider that healthy comunities need rarely voting to take a decission, as the decission is normally easy to take considering comunity rules.
+
+\section{Poisonous people identification}
+Identifying poisonous people sometimes is obvious, but, other times, it is not so. However, lecturer provide some clues to identify quickly these kind of poisonous elements in the comunities, e.g.:
+\begin{itemize}\itemsep0pt
+\item{Write on capital letters}
+\item{Have non-sense login names / mail addresses}
+\item{Use excessive punctuation}
+\item{They express themselves on a non-readable sense}
+\end{itemize}
+However, sometimes poisonous people do not fit into previous characteristics. A more accurate approach related to poisonous people characteristics is proposed by the lecturers, as they normally are:
+\begin{enumerate}
+\item{Hostile people}
+\begin{itemize}\itemsep0pt
+\item{Insult the status quo}
+\item{Ask for help on an angry way}
+\item{Try to blackmail}
+\item{Attempts to deliberately rile people}
+\item{Conspiracy accusations}
+\end{itemize}
+\item{Lack of cooperation}
+\begin{itemize}\itemsep0pt
+\item{People complain, dont help fixing anything}
+\item{Unwilling to discuss design}
+\item{They do not accept criticism}
+\end{itemize}
+\end{enumerate}
+
+\section{Disinfecting the community}
+There has to be a plan to assess the damage. Some questions must be performed, to be sure of the people disrupting on the project:
+\begin{itemize}\itemsep0pt
+\item{Is this person draining attention and focus?}
+\item{Is this person paralyzing the project?}
+\end{itemize}
+At the same time, some things need to be avoided:
+\begin{itemize}\itemsep0pt
+\item{Do not feed the energy creature. They are looking for a fight. First thing to do, ignore them, for them to ssee this kind of behavior is not taking into account.}
+\item{Do not give jerks a purchase.}
+\item{Do not engage them.}
+\item{Do not take things from the emotional. Stay to the facts.}
+\end{itemize}
+Meanwhile, these aspects are considered as good practices:
+\begin{itemize}\itemsep0pt
+\item{Do pay attention to newcomers, even if they are initially annoying.}
+\item{Do Look for the fact under the emotion.}
+\item{Do Extract a real bug report, if possible.}
+\item{Do know when to give up and ignore them.}
+\item{Do know when to forcibly boot from the community, although some times is not an easy decission (e.g.: people writing constantly to a dev-list because have a lot of interest, but that is in the end draining the focus of the community).}
+\end{itemize}
+
+\section{Conclusion}
+As a summary, the lecturers group the procedure to clean the disrupting poisonous people in four steps:
+\begin{itemize}\itemsep0pt
+\item{Comprehend}: Preserve attention and focus of the comunity.
+\item{Fortify}: Build a health community.
+\item{Identify}: Look for tell-tale signs of possible trolls.
+\item{Disinfect}: Mantaining calm and standing on your ground, without involving emotionally.
+\end{itemize}
+
+\end{document}
