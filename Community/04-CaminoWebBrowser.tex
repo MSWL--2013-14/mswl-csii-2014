@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES II: Camino Web Browser}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+On this Google Tech Talk, dated on January 2007, Mike Pinkerton, software engineer at Google, talks about Camino, an Open Source web browser for Macintosh Operating System. Nowadays, 2014, Camino Web browser has stopped to be developed, but this talk helps on understanding the battle that has been carried out up to date where only some Web browsers have been mantained on the market, and where others, e.g: Camino Web Browser, have resulted on been not developed any more due to market demands and continued Web evolution.\\
+\\
+Mike Pinkerton starts a presentation of him, highlighting the different roles he has played as Web browser developers. He has been involved in MacDev group at Google, as software engineer, but he has also worked at Netscape (1997-2002). On the other hand, he has also performed super-reviewer and module owner roles at Mozilla Foundation. He has a strong experience and knowledge in Web Browsers due to previous reasons. Apart from that, he was, by 2007, \textbf{Project Leader of Camino Web Browser}, at Mozilla Project, the main reason for him to give this talk.
+\section{Discussion}
+Pinkerton gives a short presentation on the different aspects that will be discussed on this speech. Basically, the most important things discussed will be:
+\begin{itemize}\itemsep0pt
+\item{Camino Milestones}
+\item{Lessons learnt from Mozilla and Camino}
+\item{Means of understanding Camino strategy}
+\end{itemize}
+
+\section{Mozilla History}
+It is important to know the history, in order to explain why there is Camino, apart from Firefox, together with Mozilla. The lecturer goes back to 1998, where only two Web browser existed. On the one hand, Internet Explorer, a free Web browser from Microsoft. On the other hand, Netscape Communicator. Netscape Communicator was not free. And Internet Explorer was winning the game, as it was delivered for free with Microsoft's Operating System. Microsoft wanted to monopolize the market, and was willing to spend any amount of money in order to make Netscape's browser dissappear.\\
+\\
+Netscape could not fight against Microsoft, as was a much smaller company compared to Redmond's. So they needed to change the rules of the market, and turn around the strategy where Microsoft to a development model that Microsoft was not going to follow:
+\begin{verbatim}
+"One place we knew where Microsoft would not go was Open Source.
+And we knew that they won't follow us to Open Source, because
+their browser was so tight to the Operating System, that
+releasing Internet Explorer as Open Source would involve
+releasing part of the Operating System as well."
+\end{verbatim}
+Apart from that, Pinkerton explains that Netscape knew that, being the only Open Source web browser, there would be a part of Open Source advocates, both hackers and developers, that would help defeating Microsoft, by helping developing new features, fixing bugs, and so and so forth. So, from Netscape perspective, \textbf{Comunity would help on defeating the competence}, as they were the first to be and Open Source Web browser, and contributions would come. It is interesting how a company can trust on switching to an Open Source based strategy, on top of a strong comunity that from Netscape's perspective was willing to help, in order to reach the company objectives in Web Browser markets, which was, indeed, not being defeated by Microsoft.\\
+\\
+By March 1998, the closed source Web Browser code was released as Open Source. That moment was considered an important moment in software history, and even a documentary, called ``Project Code Rush'', was recorded, and it is a good documentary to follow the history. From lecturer's perspective, ``it was fun''. It was a very interesting moment, as a strong group was created (it was the preliminar Mozilla).\\
+\\
+But, later, when they get back to work, they realize that the project was working. Netscape 5 release was accelerated due to contributions and fix from the comunity, that was contributing, besides this, on a smart way. Engineering group started dedicating more to review code contributions rather than contributing, and also to start thinking of architectural changes that could be performed in order to improve the product. But that moment, from management perspective, Gromit, which was the name for Netscape 5, was decided to be not released, in favor to develop a new from scratch program. Apart from the impact on engineers, \textbf{there was an issue of not communicating to the Open Source comunity}. The only comunication was a not on the bug fixing tool. Obviously, the Open Source comunity was angry due to the decission taken by Netscape management, what caused a loose of credit from the company to the comunity.\\
+\\
+Management also decided, for new developments, to keep just one team, as they could not afford multiple development teams for multiple Operating Systems. Development teams realized that there was two kind of roles inside software development. On the one hand, designers specialized on user experience, design, standards, and so on, and so forth. On the other hands, programmers that can code what designers say into software by coding through programming languages. The idea that appeared was to provide designers with tools that could help them to develop their ideas with their knowledge (CSS, DOM, HTML, XML, Javascript, etc.) to build the UI on top of them, and reduce the gap between design and programming. Real UIs could be built from designers, but still tools had to be developed.\\
+\\
+A lot of work in front of the development project. They made what they could, the shipped together what they had by 2000, and shipped as Netscape 6. The speaker asserts:
+\begin{verbatim}
+"It was crap. Total, absolute, unadulterated crap.
+I feel terrible that my name is connected to that
+software project."
+\end{verbatim}
+Back to the work, engineers had time to improve performance, reduce memory consumption, polish what was needed to polish, and Netscape 6.1 and Netscape 6.2 were released. This two versions (specially 6.2 version) was much more usable and robust. Netscape 7 was later released and was pretty better too.\\
+\\
+\section{Camino History}
+However, Gecko, which provided the infrastructure layout engine, was very based on Windows Operating System. It was difficult to make the browser a native browser for the other Operating Systems (Mac specially). There was a lot of work in order to port Gecko to Cocoa, which was Apple's native object-oriented application programming interface (API) for the OS X operating system. Porting Gecko to Cocoa application could help on releasing the browser on Macintosh computers, and look real native.\\
+\\
+Mac users are really advocates of the OS X operating system, and want everything on Macintosh to continue working when browsing as well, as fast as in Mac OS, with same menus and key bindings, etc. For that reason, Camino was born, although initially was named ProjectX. This web browser, built on Cocoa and around Gecko, provided that native aspects Macintosh users were willing to use. People from comunity kept an eye on it, as it was promising, although still far from his big brother, Netscape.\\
+\\
+When Camino 0.7 (Camino was how ProjectX was named later for legal issues) was released by 2003, people loved it. By that time, lots of users shared it and helped on spreading the software, as it worked really good and provided a very nice user experience on Mac, as it looked real native. It barely crashed, and was really well accepted.\\
+\\
+As Netscape wanted to focus on its browser, Camino 0.8 was released to Open Source comunity, as a part of the Mozilla Foundation, by 2004. People, apart from using it, wanted to participate on developing it. Among other stuff, comunity thinks it is a good product and is willing to participate on continuing its development and fixing the issues that are to appear.\\
+\\
+Camino 1.0 was later released, in 2006, in order to let the comunity know that the application was a stable application, and ``was not going to damage the hard-drive''. Engineers wanted to release early, so they decided on an amount of fixes that needed to be fixed, and after being fixed, they would release the 1.0 version. And so they did. The was also a user friendly web providing a lot of documentation on the bwrowser.
+
+\section{Lessons learnt}
+After previous events, the lecturer emphasizes on those aspects that must be handled in order to Open Source projects succeed along the time, based on the experience acquired on Mozilla:
+\subsection{Openness}
+As Mozilla/Netscape had lost a lot of street credit due to previously described decissions, such as discontinuating projects where comunity was involved. For that reason, from that moment, Mozilla needed to recover the street credit by being opener than ever. They wanted to be ``open to the point of promiscuity'', as Eric S. Raymond stated in the ``Catheedral and the Bazaar''. And to do so, \textbf{recovering comunity confidence}, certain objectives must be accomplished:
+\begin{itemize}\itemsep0pt
+\item{They had to be open in the decissions that were going to be made}. People feel incredibly more connected to those projects where they can understand what is going on, and will be more excited about participating on it. People must see the promise of the project, for they to participate but also for they to share with other potential members of the comunity.
+\item{People from comunity must be involved}. And they must be involved in decissions, as well as in other aspects of the project such as ways of working, for them to be loyal to the project, they must have voice inside the project.
+\item{It is important not to loose the comunity confidence}. If so, it is almost impossible to recover it and regain their trust.
+\end{itemize}
+
+\subsection{User Centric}
+Initially, browsers by Netscape were developer centric. It was really hurt to configure the project without strong science computer knowledge, and was much oriented to geeks. 
+Camino was indeed somehow of the same nature, not beeing user centric, and more focused to developers.\\
+\\
+The problem of having that strategy and being like that, is that it is very difficult to create a strong comunity. In order to have a product usable from all kind of users, is to have a strong product, focused on the ease of use, and with a very easy and comprehensible documentation focused on non experienced users perspective. If previous aspect is achieved, a much bigger bunch of users can be acquired to use the product.
+
+\subsection{Weak Ownership}
+Another lesson learnt on Mozilla is related to ownership. In particular, module ownership on Mozilla project. Module owners are responsible of fixing hot issues of that module, taking decissions on architectural changes, etc. However, initially, module owners were Netscape employees just for the reason that they knew the code.Pinkerton asserts:
+\begin{verbatim}
+"If a module owner is not responsive, the whole process breaks down."
+\end{verbatim}
+In general, comunities are very respectful with module ownership. \textbf{It is better that a module has no ownership rather than if a module as a weak one}. Without ownership, the comunity will take decissions on the steps to follow when an issue appears on that particular module, but if a module owner exist, no further steps will be performed by the comunity. It is a step back to have a weak ownership for an Oper Source project.
+
+\subsection{Testers are the most valuable resource}
+Testers are, from lecturer's perspective, the most valuable resource on the Open Source projects, due to the following reasons:
+\begin{itemize}\itemsep0pt
+\item{Help find issues immediately}. They run regressions and find the issues on a quick way.
+\item{Provide reduced testcases}. Focused on new developments and features.
+\item{Test in environments and situations nobody would imagine}. Different operating systems, with/without proxies, browse for weird URLs, etc.
+\end{itemize}
+
+\subsection{Open Bugs}
+Related to previous statement, and the importance of testing, it is essential to maintain an Open Bug database. This will help on:
+\begin{itemize}\itemsep0pt
+\item{Notifying about regressions results}. And help on avoiding duplicate work on same issues.
+\item{Provide the comunity about the project stability and quality}. This helps incredibly on making the decission of when to release a version.
+\item{Process can be reflected in the bug system}. Bug systems are more and more complicated, allowing also to include new feature developments, etc.
+\end{itemize}
+
+\subsection{Can't please everybody}
+Open Source projects can not always satisfy all of its members. It is even inappropriate to try to do so. And this is due to several factors such as:
+\begin{itemize}\itemsep0pt
+\item{Not all ideas are good ones}. Maybe are good ideas, but does not fit into the project.
+\item{Every opinion must not be taken into consideration just for the fear of losing a contributor}. Good contributors are those ones who understand the objectives of the project, and assume the constructive criticism.
+\item{Good managers of Open Source projects are the ones who say ``NO''}. During an Open Source project life, saying ``No'' will be more frequent than saying ``Yes'', and focusing on the important features is the most important aspect for comunity strengthen.
+\end{itemize}
+
+\section{Camino present}
+Last, but not least, after presentation of the lessons learnt, which is the most important aspect from comunity perspective, lecturer talks about the present of the Camino project, which can be summarized in next items:
+\begin{itemize}\itemsep0pt
+\item{Releasing new functionalities}, which has been asked by the comunity for a long time.
+\item{Start a more frequent release cycle}. As looking for perfection is making the project to start being slow.
+\item{Center on Leopard Operating System}. To take full advantage and focus on one particular market.
+\item{Migration to WebKit?}. By 2007, Camino was considering of migrating to WebKit, as WebKit was progressing really fast, but Camino users did not agree on how Safari works, and the user experience that it provided in top of it.
+\item{Continue the association with Mozilla Foundation}. By 2007, Camino was considering also if it needed to continue being associated with Mozilla Foundation, or separate from them, as Mozilla seems to be centered on Firefox, and other projects seem to have no importance.
+\end{itemize}
+
+\section{Q\&A}
+On the Questions and Answer round, some interesting questions are brought forward, such as:
+\begin{enumerate}\itemsep0pt
+\item{The number of users that Camino owns}: 250000 by 2007
+\item{The benefits that WebKit provides compared to Gecko}: which is the tremendous ease of use of the first compared to the second. Gecko is a very complicated unapproachable system, that needs a high level of rendering knowledge to work with.
+\item{The number of Gecko bugs standing for a long time}: It is a known issue, and need some focus from company and comunity to fix them. However, moving to new technologies can help on some of them to disappear as well.
+\item{The number of Gecko bugs standing for a long time}: It is a known issue, and need some focus from company and comunity to fix them. However, moving to new technologies can help on some of them to disappear as well.
+\end{enumerate}
+
+\section{Conclusion}
+From comunity perspective, the most important part of this tech talk has to do with two aspects:
+\begin{enumerate}
+\item{\textbf{The strategy of going to an Open Source project}}: As an option to survive against big proprietary competitors.
+\item{\textbf{The Mozilla Foundation lessons learnt}}: Some aspects to keep on mind when developing Open Source within a comunity are:
+\begin{itemize}
+\item{Openness}
+\item{User Centric}
+\item{Weak Ownership}
+\item{Testers are the most valuable resource}
+\item{Open Bugs}
+\item{Can't please everybody}
+\end{itemize}
+\end{enumerate}
+\end{document}
