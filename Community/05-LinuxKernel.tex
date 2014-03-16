@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES II: Linux Kernel}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\usepackage{cite}
+\usepackage{booktabs}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+On this Tech Talk on Google, happening on June 2008, Greg Kroah Hartman, who was an important role already by that date, and, who, indeed, has been increasing on importance in the project up to date, gives a talk on the Linux Kernel, emphasizing those aspects that must be considered by both Kernel users, lecture attendants, but also for Google as well. Who makes the Kernel, which is the state of the project in that date, the features of upcoming releases, the stability and quality of the project and other issues are brought forward in this talk.\\
+The talk is around two main aspects from the comunity perspective, such as:
+\begin{enumerate}
+\item{\textbf{Kernel Statistics}}. Information about the number of commits, number of contributors, main companies involved, etc. 
+\item{\textbf{Organization and Release Plan}}. How is kernel organized? Must I send a patch directly to Linus Torvalds?. Which is the release plan on the Linux Kernel?. This kind of questions are answered during this part of the talk.
+\end{enumerate}
+
+\section{Kernel Statistics}
+To start with, Kroah-Hartman emphasizes on the ``numbers'' that Linux Kernel project was handling by that date. In particular, these are numbers \textbf{per day} on changes happening on the kernel development, as a mean number, for years 2007-2008 :
+\begin{itemize}\itemsep0pt
+\item{4300 lines added}
+\item{1800 lines removed}
+\item{1500 lines modified}
+\end{itemize}
+These numbers are supposed to be of a stable project, which moves faster than any other number. Linux Kernel project supports more CPUs than any other Operating System, supported in more devices than any other Operating System, and is supposed to be continuing on increasing the number of features and devices that will support. The numbers give a \textbf{change rate of 3.69 changes per hour}, 24x7.\\
+\\
+Apart from that, a graph is shown in order to demonstrate the amount of lines added, removed and modified.From the comunity perspective, these numbers are meaningful of the state of the project, how important it is in terms of comunity and how flexible, quick and fluid software development can be on an Open Source project.\\
+\\
+Other important statistics about the kernel, have to do with the number of \textbf{LOC (lines of code), which was, by 2008, 9,2 million}, the number of contributors developers, \textbf{2399}. Another important factor is how important are contributions, in terms of work distribution. The top of the curve is getting flatter, meaning that work is being more distributed, as in 2005/2006, there was a distribution of 20 people, . By 2008, 30 people was contributing 30\% of the work. This is a high increase on the distribution of the work, very welcome by the project management. Apart from that, number of top contributors in number of patches and the number of top reviewers is shown as well.\\
+\\
+Other important data has to do with contributions in \% by companies. By that date, Suse, Novell, IBM, Intel or Oracle were the top contributors. However, there was an important contribution number by ``Amateurs'' (18.5 \%) and ``Unknown Individuals'' (5.5 \%). Google, by that time, was in position 13, but without Andrew Morton, who was paid off by Google at that time, they would decrease to 40th position. By 2007/2008 up to 27 people had contributed to Kernel.
+
+\section{Kernel Organization and Release Plan}
+Having not changed too much up to date, the lecturer showed up the organization of the Kernel, as handling this huge amount of changes is a really very challenging mission taking into account previous numbers. Taking into account the huge number of contributors and developers on Linux Kernel comunity, it is expected that non all of them send their patches to Linus Torvalds in order to be merged into the repository. It is rather, as expected, and as Torvalds has declared more than once, a top-down trustness relationship.\\
+\\
+In particular, developers contribute code by sending patches to driver/file maintainers. These maintainers, once filtered the patches provided, send them to subsystem maintainers, who send them mainly to Linus Torvalds. Sometimes, other main roles in the project, as was in 2008 Andrew Morton (or could be, today, Kroah Hartmans himself), receive those contributions directly.\\
+\\
+By that date, there were up to 600 driver/file maintainer, who review the code provided by developers. Subsystem maintainers are responsible of ``big areas'', such as USB, PCI, VFS, core, etc. The code is then sent to ``Kernel Next Tree'', who merges everything and check if the build has broken.\\
+\\
+The main idea here is how organized Open Source Project Comunities can be, and shows how being a fluent and quick development software comunity does not mean having no control on what is going inside the kernel.\\
+In the same manner, an explanation of the release cycle is explained. Mainly, once an rc (Release Candidate) version is proposed, there is a pair of weeks to late commits. After that, bug fixing, regression running and tests start. After several release candidates, an stable version is ``frozen'', normally in a period between 2 and 3 months, on what means obviously a ``release often, release early'' strategy. It is also a policy based on a ``divide and rule'' mechanism, where there is a lot of maintainers specialized in small pieces of this huge project. This means that, although stable version can be updated (Security updates, i.e.).\\
+\\
+On 2008, Linux Kernel Project was already using Linux. The lecturer recognizes how this release strategy benefits from this control version, apart from the other benefits such as distributed development.\\
+\\
+Another important aspect on Linux Kernel Project is about testing. The speaker clarifies that testing is not easy for an Operating System. Unit Test concepts do not apply. Indeed, testing activities are delegated into developers mainly. What Kernel project performs are regressions, meaning installation of a complete kernel version and testing. An important way of helping the project is just taking an RC version and test it on your laptop, in order to discover possible bugs.\\
+\\
+Apart from previous aspects, and after showing a more complete bunch of statistics around developers, contributions and so on and so forth, the speaker also shows the upcoming new features of kernel 2.6.26 version, which is a complete whole of new features (more than 50?), giving a measure on how active and dynamic kernel development was by that date.\\
+\\
+Last, but not least, regarding the future of the Kernel Project, the lecture, already by 2008, clarified how important and ``cool'' was KVM for the project. Nowadays, in 2014, it seems that this importance has been achieved, taking into account how technologies such as Cloud Computing and Virtualization has turned.
+\bibliographystyle{unsrt}
+\bibliography{04-LinuxKernel}{}
+\end{document}
