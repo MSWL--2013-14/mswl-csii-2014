@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES II: Edge BSD}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\usepackage{cite}
+\usepackage{booktabs}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+On Tech Talk, dated on February 2014 as part of FOSDEM 2014 ~\cite{FOSS00}, Pierre Pronchery, a developer on EdgeBSD, gives a talk about this project. On this talk, the lecturer clarifies what is the project, how it is organized. In the end, EdgeBSD is a BSD distribution, based on NetBSD, where some alternatives development branches have been started.\\
+\\
+From the comunity perspective, this lecture faces very interesting issues, e.g.:
+\begin{itemize}
+\item{NetBSD development model}
+\item{Git and Distributed development}
+\item{EdgeBSD development model}
+\item{Release system and improvements}
+\end{itemize}
+
+\section{NetBSD}
+
+To start with, the lecturer talks about NetBSD, a project started in 1993, which is considered one of the oldest ``modern'' open source project. It gave birth to OpenBSD, has about 256 developers today, and has a cathedral-like type of development. It is remarkable how this developer refers to the Cathedral model, referring to the Cathedral and Bazaar ~\cite{CATH00}.\\
+\\
+From lecturer's perspective, this OOSS (Operating System) is ``great and beautiful'' due to a set of characteristics it accomplishes:
+\begin{enumerate}\itemsep0pt
+\item{Has a strong focus on quality}.
+\item{It was very well designed}.
+\item{It is cross-compiled for your architecture}.
+\item{The project attracted lots of cool researches}.
+\item{Contains much of the new features, such as Xen, ASLR, File Cryptography, ZFS support, etc}.
+\end{enumerate}\itemsep0pt
+
+\section{NetBSD development model}
+From the comunity perspective, one of the most important topics has to do with the development model in NetBSD project, which helps on clarifying why the project has above characteristics. The lecturer gives some keys in order to let the audience discover why this comunity can be considered a ``Cathedral like'' community:
+\begin{itemize}\itemsep0pt
+\item{Only official developers can commit changes}. And being an official developer is not easy. You must belong to the NetBSD Foundation, apply for the role, and then it takes a while until you are granted with the permissions.
+\item{Commits need usually to be reviewed}.
+\item{As it is based on CVS, branches remain forever}.
+\item{Existing features are not allowed to be broken}.
+\end{itemize}
+In lecturer's opinion, \textbf{this development model can result harmful}, due to several reasons:
+\begin{itemize}
+\item{Occasional contributions can not commit their patches}. They can not easily become software developers inside the project.
+\item{Someone has to be available to commit}.
+\item{If contributions are major contributions the issue is even worst}. The contributions are more difficult to be reviewed.
+\item{Reviewers, meanwhile, can not easily test and patch others contribution}. This fact is even worst due to the fact of NetBSD project being using CVS.
+\item{Even being an official committer, job is not easy}. Using CVS means that you can't perform tasks such as reverting changes, break features, delete branches, etc. If you do so, people will receive mail (considered basically spam) and would go against your developer reputation.
+\end{itemize}
+Apart from previous issues, NetBSD project have other ones having not to do with the community, but rather with technicals considerations, such as NetBSD to be using its own versions of very important applications such as GCC, Xorg, bind, postfix, etc. This kind of aspects is making NetBSD not to be executable in the latest times, due to, for example, NetBSD Xorg official packages being broken.
+
+\section{CVS: The issue}
+From lecturer's perspective, CVS is not so bad. He prefers it rather than Git, as considers CVS much easier to fix, while Git is considered inconsistent, opaque and difficult to use. However, lectuerer considers that this VCS (Version Control System) has some advantages that makes it very suitable to ease distributed development. Features such as:
+\begin{itemize}
+\item{Branch creation}. Branch can be created basically for free. 
+\item{Offline work}. Git local repository can be used off-line, and branches and commits can be performed without needing to push to official repositories.
+\item{Stash and Stage}.
+\end{itemize}
+
+\section{EdgeBSD}
+EdgeBSD is, as the lecturer's clarfies, an staging area for NetBSD. Apart from that, EdgeBSD is using decentralized VCS (Git for its popularity).\\
+\\
+Without considering the technical considerations, which are not relevant for the lecturer, EdgeBSD project results being more open, more affordable and of course more fun. Apart from that, it allows more people to contribute, by working in different brances, and provides an ecosystem in order to ease the contribution of polish patches to BSD.\\
+\\
+All the previous aspects allow also to attract more research and contributions than NetBSD.
+
+\section{EdgeBSD development model}
+EdgeBSD contains a Git mirror (CVS to Git) in order to track NetBSD's original code. Apart from that, EdgeBSD contains some Git repositories in order to handle track master as well as select branches. Contributors can push to that branches.\\
+\\
+EdgeBSD master branch and NetBSD branch are considered as the tentative branches. 
+
+\section{Push Open Source Development}
+Another different aspect of NetBSD project compared to NetBSD project has to do with the intention of the project to facilitate Open Source development.\\
+\\
+For this reason, the project approaches to factilitate Open Source Software (OSS) development due several aspects such as:
+\begin{itemize}
+\item{Provide a good development infrastructure to developers}. For this reason, the project provides e-mail, calendar, secure Instant Messaging (IM), VoIP and conferencing facilities, among other stuff.
+\item{Automated check and procedures}. ``Build-o-matic'' features, such as ``compile this patch for this architectures'', or ``push this to master patch if it compiles ok''.
+\end{itemize}
+
+\section{Edge BSD release}
+EdgeBSD provides a release system, that consists of the main NetBSD branch with some extra functionalities enabled, continuous security updates and bug fixes and stable and testing new packages.
+From lecturer's perspective, releases have to provide some key features in order to the distribution of the OS to be successful. Among the desired features for EdgeBSD releases, next ones should be there:
+\begin{itemize}
+\item{Graphical Text Based installers}.
+\item{Default environment, with known hardware and software support}.
+\item{Ready to flash images for a range of devices}.
+\item{Milestones, continues updates}.
+\end{itemize}
+\textbf{This is a remarkable aspect from Community building perspective}, in order to make the product to reach to a wider target user community.
+
+\section{Conclussion}
+Last, but not least, the lecturer provided some ``hands-on'' demonstration in order to explain how Git repositories are organized and how Gitolite helps on managing users. Apart from that, some URLs are provided in order to promote the project ~\cite{EDGE00}
+This lecture is very interesting in order to demonstrate how a Fork can appear due to several reasons, and one of them is, as in EdgeBSD project, that \textbf{some people who can not contribute to a project due to its development process strategy}. This issue can result on Fork appearing in order to accommodate all those developers who are ocassional contributor but still want to include their contributions to the community.
+
+\bibliographystyle{unsrt}
+\bibliography{08-EdgeBSD}{}
+\end{document}
