@@ -1,6 +1,8 @@
 mswl-csii-2014
 ==============
 
+First deadline with the horizontal report a couple of weeks before the final deadline (Wednesday April 9th) and a final deadline on April 23rd.
+
 ##MSWL - Case Studies II (2014).
 
 We are requested to write horizontal report one topic we choose in each projects that have been presented in this subject. The talks in this subject will show the projects vertically, i.e., they will contain information regarding the history, the goals, the members, the licenses, the related industry, the technologies, the governance, etc. of the project. Each student has to select one of these aspects and write a report on how the selected aspect is handled in all the projects that have been presented in the subject.
