@@ -168,7 +168,7 @@ About speakers of this talk, the main speaker was \emph{\textbf{Sigurd Magnusson
 In technical questions was speaking\emph{ \textbf{Sam Minnée}}, CEO and co-founder of SilverStripe keeps the company focused on its mission to reshape business through the web. Sam has a \emph{BA in Computing} and Philosophy from Victoria University.
 
 \subsection{Technology}
-Fisrtly, Sigurd introduces New Zealand data, in particular, he talks about free software projects with New Zealand contributors, like Jade, Aftermail, Xero, PGP, PlanHQ, and Catalyst. And example of usage of free software like democratic process, which is implemented with Perl/Mason and Postgres. 
+Firstly, Sigurd introduces New Zealand data, in particular, he talks about free software projects with New Zealand contributors, like Jade, Aftermail, Xero, PGP, PlanHQ, and Catalyst. And example of usage of free software like democratic process, which is implemented with Perl/Mason and Postgres. 
 
 Again the O'Reilly's book "Producing open source software" is seen as the Bible of free software development.
 
@@ -215,7 +215,7 @@ The \textbf{PHP Data Objects (PDO)} extension defines a lightweight, consistent 
 \subsection{Introduction}
 Camino was a free, open source, \emph{GUI-based Web browser} based on \emph{Mozilla's Gecko }layout engine and specifically designed for the OS X operating system. In place of an XUL-based user interface used by most Mozilla-based applications, Camino used Mac-native Cocoa APIs. On May 30, 2013, the Camino Project announced that the browser is no longer being developed.
 
-About speaker of this talk, \textbf{\emph{Mike "Pink" Pinkerton}} is an American \emph{Software Engineer} who is known for his work on the Mozilla browsers. He lectures on \emph{Development of Open Source Software} at George Washington University. Pinkerton studied at University of California, San Diego where he graduated with a B.S. in \emph{Computer Science}, then at Georgia Institute of Technology where he graduated with a Master's Degree in Computer Science.Pinkerton started working at Netscape Communications in June 1997 where he worked on the Netscape Navigator and then Mozilla browsers, and worked to openning source code for Netscape. While at Netscape he started development of the Camino (then Chimera) web browser with Dave Hyatt.  Mike Pinkerton had been the technical lead of the Camino project since Dave Hyatt moved to the Safari team at Apple Inc. in mid-2002.
+About speaker of this talk, \textbf{\emph{Mike "Pink" Pinkerton}} is an American \emph{Software Engineer} who is known for his work on the Mozilla browsers. He lectures on \emph{Development of Open Source Software} at George Washington University. Pinkerton studied at University of California, San Diego where he graduated with a B.S. in \emph{Computer Science}, then at Georgia Institute of Technology where he graduated with a Master's Degree in Computer Science.Pinkerton started working at Netscape Communications in June 1997 where he worked on the Netscape Navigator and then Mozilla browsers, and worked to opening source code for Netscape. While at Netscape he started development of the Camino (then Chimera) web browser with Dave Hyatt.  Mike Pinkerton had been the technical lead of the Camino project since Dave Hyatt moved to the Safari team at Apple Inc. in mid-2002.
 
 \subsection{Technology}
 Mike Pinkerton talk about the past, present, and future of Camino project, and lessons learned from Netscape development, open source in Mozilla, and Camino development.
@@ -224,7 +224,7 @@ In 1998 Microsoft Internet Explorer was for free and the market share was growin
 
 Source331 project was a Netscape project to all-out effort to have the source code of its suite Netscape communicator out by March(3) 31, 1998. Outstanding fact for free software history.
 
-Netscape had had a cross-platform history of its products, and in that moment there were not resource for maintained all the developers team, only for the MS Windows. But the designers had expert knowledge of web standards (HTML, DOM, javascript, CSS, XML) and programmers of the community the capacity, and something so magic happened, the project worked, and release building alone for the community, without company paid for that.
+Netscape had  a cross-platform history of its products, and in that moment there were not resource for maintained all the developers team, only for the MS Windows. But the designers had expert knowledge of web standards (HTML, DOM, javascript, CSS, XML) and programmers of the community the capacity, and something so magic happened, the project worked, and release building alone for the community, without company paid for that.
 
 But there were problems, one of them the need to release a version, thus in 2000 Netscape 6 was release, and it was very bad. Until version 6.2 the product was not stable. Another problem was that Windows oriented design constrained portability. And at that moment an opportunity appeared with Apple to create a new browser using Cocoa browser and gecko engine for Mac. 
 
@@ -358,6 +358,17 @@ Mercurial has got as many as central repositories needed, no only one like tradi
 In conclusion, Mercurial is easy to use, robustness, and really fast performance. And written in Python, at least initially no high performance language, but the used techniques in the implementation give Mercurial this high performance. 
 
 \subsection{Additional information}
+\subsubsection* {Interoperability Tools}
+Mercurial has the convert extension, which does a great job of converting repositories from some other system to mercurial. It's clean, consistent, and fast.
+\subsubsection*{ Branch Management}
+
+In Mercurial there are two types of branches you might see as a user: named branches and repository clones. Cloning a repository is how you branch in darcs and is a really simple concept. When you want to do something different, you just clone your repo somewhere else and start working. Named branches allow you to have a workflow where you can switch back and forth between branches in the same working directory. However, named branches are flawed.
+
+In Mercurial, every changeset belongs to a named branch. That is, the branch name is stored in the changeset. The flaw is that it's quite easy to have more than one branch with the same name, and it's difficult to tell when this has happened. This can cause confusion in a team where one is left wondering what changes, exactly, have made it into the stable branch when multiple people have reopened and merged the branch on different timelines.
+
+Also, because the branch name is in the changeset, the branch lives forever. The only short-term branches are clone branches. That just doesn't encourage quick experiments.
+
+
 
 \newpage
 
@@ -479,11 +490,11 @@ For Pronchery, EdgeBSD should be as attractive a platform as possible, and use t
     \item virtualization of most components with the RUMP anykernel.
 \end{itemize}
 
-Finally, most used BSD flavours and its strenght
+Finally, most used BSD flavors and its strength
 \begin{itemize}
 	\item FreeBSD - Maximum performance.
 	\item OpenBSD - Maximum security.
-	\item NetBSD - maximum portability.
+	\item NetBSD - Maximum portability.
 	\item DragonFly BSD - Emphasis on multiprocessor systems and clustering.
 \end{itemize}
 
@@ -556,7 +567,7 @@ The \emph{Debian Developer's Package Overview (DDPO)} is a web application offer
 
 The \emph{Ultimate Debian Database (UDD)} gathers a lot of data about various aspects of Debian in the same SQL database. It allows users to easily access and combine all these data.
 
-The \emph{snapshot archive }is a wayback machine that allows access to old packages based on dates and version numbers. It consists of all past and current packages the Debian archive provides. 
+The \emph{snapshot archive }is a way back machine that allows access to old packages based on dates and version numbers. It consists of all past and current packages the Debian archive provides. 
 
 \newpage
 
