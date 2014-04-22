@@ -27,8 +27,8 @@ Available video talks:
 
 ## Students
 
-* Amal Roumi  (@roumia) - Licenses for CSI and History for CSII.
-* Daniel Gámez (@gamezdaniel) - ...
+* Amal Roumi  (@roumia) - Licenses for CSI and History for CSII
+* Daniel Gámez (@gamezdaniel) - Goals of FLOSS projects 
 * Sergio Arroutbi Braojos (@sarroutbi) - Comunity Building
 * Jose Alberto Navas Guerrero (@janague )- Technologies
 
