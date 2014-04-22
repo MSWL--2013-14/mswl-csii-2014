@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% by Daniel Gamez
+% URJC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Page size to A4
+\geometry{a4paper} 
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
+
+\usepackage{url}
+
+\usepackage{multirow}
+
+
+\newenvironment{myindentpar}[1]%
+ {\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+ }
+ {\end{list}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\includegraphics{urjc} \\[0.5cm] % Include logo
+
+\textsc{\LARGE \\Universidad Rey Juan Carlos}\\[1cm] % Name of your university/college
+
+\textsc{\Large Master in Libre Software}\\[0.5cm] % Major heading such as course name
+\textsc{\large Case Studies}\\[0.5cm] % Minor heading such as course title
+
+\HRule \\[1.5cm]
+{ \huge \bfseries How goals are handled by selected F$\ell$OSS projects}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Daniel H.\textsc{G\'amez V.} % Your name
+\end{flushleft}
+\end{minipage}
+%~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Lecturer:} \\
+Gregorio \textsc{Robles} % Lecturer's Name
+\end{flushright}
+\end{minipage}\\[1cm]
+
+{\large \today}\\[1.8cm] % Date, change the \today to a set date if you want to be precise
+
+\textsc CC BY-SA 3.0\\[0.2cm]
+\includegraphics[scale=0.5]{license} \\ % Include license
+{\small http://creativecommons.org/licenses/by-sa/3.0/legalcode}\\
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty}
+{\bf \huge Abstract}
+
+\vspace{10 mm}
+
+The following report is focused on the goals of the selected projects, including information from as many of the projects that have been presented in this subject as possible. A group of talks presented by people involved in FLOSS will show the projects vertically, providing information regarding the history, the goals, the members, the licenses, the related industry, the technologies, the governance, among others.
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+Introduction..
+
+%----------------------------------------------------------------------------------------
+%	VIDEO TALKS
+%----------------------------------------------------------------------------------------
+
+\section{Video Talks}
+
+Video talks..
+
+%------------------------------------------------
+
+\subsection{How the FreeBSD Project Works}
+
+This talk was given by Robert Watson from the University of Cambridge Computer Laboratory, and took place on 2007 at the Google TechTalks meeting. As a current kernel developer Watson has been actively involved in the FreeBSD project since 1999. The talk is about the process of writing Open Source in a large FLOSS project.
+
+%------------------------------------------------
+
+\subsubsection{Brief description of FreeBSD}
+
+FreeBSD is a FLOSS BSD UNIX based operating system developed by Berkeley University of California back in 1993.
+
+It is widely used, and it is possible to categorize three kind of consumers for this operating system:
+
+\begin{itemize}
+  \item Large organizations offering network and telecommunication services, such as Internet Service Providers
+  \item Hardware manufacturers of appliances or products with embedded operating systems, such as computers or firewalls
+  \item Personal computers and the way that everybody access to the internet nowadays, in the sense that software libraries and protocols from FreeBSD are needed for this purpose
+\end{itemize}
+
+
+\subsubsection{Main goals of FreeBSD}
+
+
+\begin{itemize}
+  \item Maintain an efficient social process of writing software  
+    Based on the interaction and feedback of the entities involved
+  
+  \item Develop a robust, secure and reliable operating system
+    With about 340 CVS committers and thousands of contributors involved in the project
+  
+  \item Large documentation available, including translation for multiple languages
+  
+  \item Maintain developing under Revision Control System
+	At using Apache Subversion (SVN)   
+  
+  \item Ensure freedom of licensing
+	Thanks to the permissive FreeBSD License  
+
+  \item Support the project through the FreeBSD Foundation
+	By providing financial resources, legal advice, receive donations that are destined to help developers get to conferences and events, as well as research investment and hardware purchases
+  
+  % The role of the people involved in the project is different depending on the perspective (ISP/developer/final user)
+  
+\end{itemize}
+
+%------------------------------------------------
+
+\subsection{How Open Source Projects Survive Poisonous People}
+
+%------------------------------------------------
+
+\subsubsection{Brief description}
+
+\subsubsection{Main goals of }
+
+%------------------------------------------------
+
+\subsection{SilverStripe CMS}
+
+%------------------------------------------------
+
+\subsubsection{Brief description of SilverStripe}
+
+\subsubsection{Main goals of SilverStripe}
+
+%------------------------------------------------
+
+\subsection{Camino}
+
+%------------------------------------------------
+
+\subsubsection{Brief description of Camino}
+
+\subsubsection{Main goals of Camino}
+
+%------------------------------------------------
+
+\subsection{Greg Kroah Hartman on the Linux Kernel}
+
+%------------------------------------------------
+
+\subsubsection{Brief description of the Linux Kernel}
+
+\subsubsection{Main goals of Linux Kernel}
+
+%------------------------------------------------
+
+\subsection{Mercurial Project}
+
+%------------------------------------------------
+
+\subsubsection{Brief description of Mercurial}
+
+\subsubsection{Main goals of Mercurial}
+
+%------------------------------------------------
+
+\subsection{Stefano Zacchiroli on Debian: 20 Years and counting}
+
+%------------------------------------------------
+
+\subsubsection{Brief description of Debian}
+
+\subsubsection{Main goals of Debian}
+
+%------------------------------------------------
+
+\subsection{The EdgeBSD Project}
+
+%------------------------------------------------
+
+\subsubsection{Brief description of EdgeBSD}
+
+%------------------------------------------------
+
+\subsection{Debian Secrets what I wish I knew before joining Debian}
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSIONS
+%----------------------------------------------------------------------------------------
+
+\section{Conclusions}
+
+
+
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99}
+ 
+\end{thebibliography}
+
+%------------------------------------------------
+
+\end{document}
+
+%------------------------------------------------
+%\subsubsection{Subsubsection 1}
+
+%\begin{figure}[H]
+%\center{\includegraphics[width=0.5\linewidth]{placeholder}}
+%\caption{Example image.}
+%\label{fig:speciation}
+%\end{figure}
+%------------------------------------------------
+%\begin{wrapfigure}{l}{0.4\textwidth}
+%  \begin{center}
+%    \includegraphics[width=0.38\textwidth]{fish}
+%  \end{center}
+%  \caption{Fish}
+%\end{wrapfigure}
+%------------------------------------------------
+%\begin{description} % Numbered list example
+%\item[First] \hfill \\
+%\lipsum[9] % Dummy text
+%\end{description} 
+%------------------------------------------------
+%\begin{itemize}
+%  \item X
+%\end{itemize}
+%------------------------------------------------
+% \footnote{http://www.html}.
+% 
