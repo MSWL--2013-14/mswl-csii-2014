@@ -19,7 +19,7 @@ FreeBSD is a FLOSS BSD UNIX based operating system developed by Berkeley Univers
 
 - Hardware manufacturers of appliances or products with embedded operating systems, such as computers or firewalls
 
-- Personal computers and the way that everybody access to the internet nowadays, in the sense that software libraries and protocols from FreeBSD are needed for this purpose
+- Personal computers and the way that everybody access to the Internet nowadays, in the sense that software libraries and protocols from FreeBSD are needed for this purpose
 
 Main goals of FreeBSD
 
@@ -76,7 +76,7 @@ It is possible to identify four stages of protection, and specific goals for eac
   + Do no let people open old discussions, unless it is something that really worth it
   + Produce documentation on mission and objectives, bug fixes, issue trackers, so new developers are able to continue with the guidelines without repeat mistakes
   + Define standard log formats to follow it in an easy way
-  + Keep coordination with commiters about changes
+  + Keep coordination with committers about changes
   + Do not allow commits of very large changes on the project's code, try to be incremental (using branches)
   + Identify the Bus Factor of the project: the number of developers that have to get hit by a bus to leave the project on chaos
   + Encourage people to spread their expertise around
