@@ -104,21 +104,58 @@ The following report is focused on the goals of the selected projects, including
 
 \newpage
 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+Here will be analyzed a few conferences held by key people involved in some significant FLOSS projects, some of them with some longevity like Debian, and others more recent like EdgeBSD. The speakers have presented the projects providing a wealth of information on the history, evolution and composition thereof, and the idea has been to address these projects from the same point of view, attacking a particular topic.\\
+
+In general a software project that follows the essential freedoms proposed by the Free Software Foundation\footnote{http://www.gnu.org/philosophy/free-sw.html}, represents a good measure to determine whether the project is free software or not, and the goals are generally consistent with this criterion.\\
+
+The list of talks that were analyzed, also available on the internet, is as follows:
+
+\begin{itemize}
+  \item How the FreeBSD Project Works\\
+  		http://www.youtube.com/watch?v=nNkqKdLm1rU
+  \item How Open Source Projects Survive Poisonous People\\
+  		http://www.youtube.com/watch?v=ZSFDm3UYkeE
+  \item SilverStripe CMS\\
+  		http://www.youtube.com/watch?v=9hHHfNJAvi8
+  \item Camino\\
+  		http://www.youtube.com/watch?v=vGTbVz38CNo
+  \item Greg Kroah Hartman on the Linux Kernel\\
+  		http://www.youtube.com/watch?v=L2SED6sewRw
+  \item Mercurial Project\\
+  		http://www.youtube.com/watch?v=1sV8Z\_Lmpt4
+  \item Stefano Zacchiroli on Debian: 20 Years and counting\\
+  		http://www.youtube.com/watch?v=yKr2qExNoLY
+  \item The EdgeBSD Project\\
+  		http://www.youtube.com/watch?v=\_D\_iaad5rPo
+  \item Debian Secrets what I wish I knew before joining Debian\\
+  		http://www.youtube.com/watch?v=jyEmjWvoeNo
+\end{itemize}
+
+\newpage
+
+
 %----------------------------------------------------------------------------------------
 %	VIDEO TALKS
 %----------------------------------------------------------------------------------------
 
-\section{Video Talks}
+% \section{Video Talks}
 
 %------------------------------------------------
 
-\subsection{How the FreeBSD Project Works}
+\section{How the FreeBSD Project Works}
 
 This talk was given by Robert Watson from the University of Cambridge Computer Laboratory, and took place on 2007 at the Google TechTalks meeting. As a current kernel developer Watson has been actively involved in the FreeBSD project since 1999. The talk is about the process of writing Open Source in a large FLOSS project.
 
 %------------------------------------------------
 
-\subsubsection{Brief description of FreeBSD}
+\subsection{Brief description of FreeBSD}
 
 FreeBSD is a FLOSS BSD UNIX based operating system developed by Berkeley University of California back in 1993.\\
 
@@ -131,7 +168,7 @@ It is widely used, and it is possible to categorize three kind of consumers for 
 \end{itemize}
 
 
-\subsubsection{Main goals of FreeBSD}
+\subsection{Main goals of FreeBSD}
 
 
 \begin{itemize}
@@ -158,7 +195,7 @@ It is widely used, and it is possible to categorize three kind of consumers for 
 
 %------------------------------------------------
 
-\subsection{How Open Source Projects Survive Poisonous People}
+\section{How Open Source Projects Survive Poisonous People}
 
 %------------------------------------------------
 
@@ -171,11 +208,11 @@ A talk given at Google's Open Source Developer Speaker Series by Ben Collings \&
   \item Try to reach a culture of trust in the community
 \end{itemize}
 
-\subsubsection{Brief description of what is meant by poisonous people at FLOSS communities}
+\subsection{Brief description of what is meant by poisonous people at FLOSS communities}
 
 A software development community is constantly besieged by external or even internal factors that could fractured it, even more in a FLOSS community. Factors that can be attributed to people as well as procedures performed daily. It is extremely important to identify these elements and know both the attackers and vulnerabilities, in order to achieve sustainability of the Open Source project.
 
-\subsubsection{Main goals in Open Source Projects to survive poisonous people}
+\subsection{Main goals in Open Source Projects to survive poisonous people}
 
 It is possible to identify four stages of protection, and specific goals for each of them are the following:
 
@@ -231,13 +268,13 @@ It is possible to identify four stages of protection, and specific goals for eac
 
 %------------------------------------------------
 
-\subsection{SilverStripe CMS}
+\section{SilverStripe CMS}
 
 %------------------------------------------------
 
 This talk was held in August 2007 by two of the founding members of the project, Sigurd Magnusson and Sam Benny. A pair of FLOSS  enthusiasts from New Zealand, who have participated in the Google Summer of Code competition. This couple claims that FLOSS is a democratic process in New Zealand and that this system is in fact reproducible.
 
-\subsubsection{Brief description of SilverStripe Content Management System}
+\subsection{Brief description of SilverStripe Content Management System}
 
 Magnusson and Benny started building websites since year 2000, and in this process they came to accumulate deep knowledge about the tasks involved in this business. They developed an application that describe as:
 
@@ -248,7 +285,7 @@ Magnusson and Benny started building websites since year 2000, and in this proce
   	  \item Out of the box, and at the same time providing a framework
   	\end{itemize}
 
-\subsubsection{Main goals of SilverStripe}
+\subsection{Main goals of SilverStripe}
 
   	\begin{itemize}
   	  \item Use FLOSS to advertise the product and get people on board, with no ads more than the own source code
@@ -276,16 +313,16 @@ Magnusson and Benny started building websites since year 2000, and in this proce
   	\end{itemize}
 
 %------------------------------------------------
-\subsection{Camino}
+\section{Camino}
 %------------------------------------------------
 
 Talk held in January 2007 by Mike Pinkerton, a software engineer in MacDev at Google, who worked at Netscape from 1997 until 2002. Pinkerton tries to highlight the lessons learned in the process of develop a FLOSS project around a web browser, in a time that were only two direct competitors ``Netscape Communicator" and ``Microsoft Internet Explorer" back in 1998.
 
-\subsubsection{Brief description of Camino}
+\subsection{Brief description of Camino}
 
 It started as a Mozilla initiative to continuing developing a web browser for the Mac platform, due to cross-platform was an important feature for the browser market, and it still is at these days. But in the very beginning this project was born as business strategy by Netscape, who created a business model around selling their product: a commercial web browser. The main problem faced by this company was that Microsoft started giving it for free as part of Windows OS. Anyhow Netscape realized that Microsoft's strategy could be used against them in a FLOSS field, because Internet Explorer was highly integrated with its also proprietary OS. By turning the Netscape Communicator source code available, they would be competing in the opposite direction to Microsoft's strategy, to whom opening the source code was non-viable. This is how in March 1998 was announced the release of Netscape Communicator source code as the Source 331 Project.
 
-\subsubsection{Main goals of Camino as a FLOSS project}
+\subsection{Main goals of Camino as a FLOSS project}
 
   	\begin{itemize}
   	  \item Compete against Microsoft or defeat it in the web browsers field
@@ -307,16 +344,16 @@ It started as a Mozilla initiative to continuing developing a web browser for th
   	\end{itemize}
 
 %------------------------------------------------
-\subsection{Greg Kroah Hartman on the Linux Kernel}
+\section{Greg Kroah Hartman on the Linux Kernel}
 %------------------------------------------------
 
 In 2008 Greg Kroah Hartman, as a subsystem kernel maintainer for USB, driver core, and previously PCI related, gave this talk about the Linux Kernel, the process, who is doing it, how it is been done.
 
-\subsubsection{Brief description of the Linux Kernel ecosystem}
+\subsection{Brief description of the Linux Kernel ecosystem}
 
 The 1.0 version of the Linux Kernel was released on March 1994. At this time it only supported single-processor i386-based computer systems, as well as a reduced set of hardware drivers in general. In subsequent releases, portability became a concern, so the kernel gained support for computer systems using processors based on the Alpha, SPARC, and MIPS architectures, and also began to incorporate drivers to support a large number of hardware devices. This evolution was possible because many hackers became interested in the project proposed by Linus Torvalds who licensed it as GNU GLP v2 \cite{Torvalds:1991lt}, which allowed and facilitated the rules for sharing the source code since the very beginning.
 
-\subsubsection{Main goals of the Linux Kernel project}
+\subsection{Main goals of the Linux Kernel project}
 
   	\begin{itemize}
   	  \item Provide a stable-multiplatform operating system kernel
@@ -332,16 +369,16 @@ The 1.0 version of the Linux Kernel was released on March 1994. At this time it 
   	\end{itemize}
 
 %------------------------------------------------
-\subsection{Mercurial Project}
+\section{Mercurial Project}
 %------------------------------------------------
 
 Continuing with the Google TechTalks series, in June 2006 Bryan O'Sullivan talks about a new project oriented to distributed revision control systems. Mercurial was started as an appropriate tool likely to FLOSS developments, allowing the evolution of such projects.
 
-\subsubsection{Brief description of Mercurial}
+\subsection{Brief description of Mercurial}
 
 Written in Python an C programming language, under GNU GPL v2 license, Mercurial is a cross-platform, distributed revision control tool for software developers. This project started as an alternative to Version Control Systems (VCS) such as BitKeeper, who was responsible until those days for holding the development scheme of important and robust software projects such as the Linux Kernel. Although it was efficient, communities like the one from the Linux Kernel were determined to change their proprietary VCS to a better and flexible solution, so new initiatives were born in parallel and by different people (mainly BitMover and Git) \cite{Mackall:2006mm}.
 
-\subsubsection{Main goals of the Mercurial project}
+\subsection{Main goals of the Mercurial project}
 
   	\begin{itemize}
   	  \item Produce a reliable and sustainable Revision Control System
@@ -353,16 +390,16 @@ Written in Python an C programming language, under GNU GPL v2 license, Mercurial
   	\end{itemize}
 
 %---------------------------------------------------------------
-\subsection{Stefano Zacchiroli on Debian: 20 Years and counting}
+\section{Stefano Zacchiroli on Debian: 20 Years and counting}
 %---------------------------------------------------------------
 
 This time the current Debian Project Leader Stefano Zacchiroli by year 2013 talks about the success of the Debian project as a FLOSS community and the factors that have allowed it over the last 20 years.
 
-\subsubsection{Brief description of the Debian project}
+\subsection{Brief description of the Debian project}
 
 Debian itself is a FLOSS operating system formed mainly by software under GNU General Public License. It was founded by Ian Murdock in 1993, and has been continued to develop since then by a community of people who collaborate as volunteers following the Debian Free Software Guidelines (DFSG) \cite{Perens et al:2004bp}. The software, the community, and the set of rules under which they coexist, is what gives life to the project as a whole.
 
-\subsubsection{Main goals of Debian as a project}
+\subsection{Main goals of Debian as a project}
 
   	\begin{itemize}
   	  \item States the importance of the Debian Freedom Manifest
@@ -451,16 +488,57 @@ Debian itself is a FLOSS operating system formed mainly by software under GNU Ge
 
 
 %------------------------------------------------
-\subsection{Debian Secrets what I wish I knew before joining Debian}
+\section{The EdgeBSD Project}
+%------------------------------------------------
+
+Pierre Pronchery gives this speech as EdgeBSD project leader at the FOSDEM 2014 event in Belgium. An interesting initiative with the aim of expanding the potential of the NetBSD system, but in a parallel or separate way, due to the difficulty to contribute to the latter.
+
+\subsection{Brief description of EdgeBSD project}
+
+Pronchery claims that his intention is not to fork NetBSD, but he also wants to add many features to this system in the form of contributions, but has not been able to do it because of the limited conditions imposed by current maintainers of the NetBSD project. This situation leads him to produce his own version of system (EdgeBSD), which is based on NetBSD, and intends to remain this way even in upcoming releases in relation to the system core.
+
+\subsection{Main goals of EdgeBSD as a continued FLOSS project}
+
+\begin{itemize}
+	\item As a Fork of NetBSD, EdgeBSD claims that its predecessor harms development, due to its cathedral-like type of development
+	\item The Version Control System in NetBSD (CVS) produces a manual and tedious work, so EdgeBSD looks for improve that
+	\item Reduce the many restrictions that are present in NetBSD, even to official developers
+	\item Maintain source packages from NetBSD in specific branches, letting the users to pull from them if desired
+	\item Some changes introduced in comparison with NetBSD are:
+		\begin{itemize}
+			\item Decentralized VCS with Git
+			\item Less restrictive in order to push contributions
+			\item More people involved due to its flexibility
+		\end{itemize}	
+	\item Rely on a decentralized tool to maintain VCS, without falling into discussions over it, and giving importance to the project mainly
+	\item Propose an improved development model
+	\item Test and enable more features in the system
+	\item Encourage the community for testing of the core code and packages
+	\item Provide a more useful way to share patches and fixes in general
+	\item Provide a fun and attractive as a research and development platform while delivering a modern, robust, and industrial-grade system for all ranges of computer devices
+	\item Provide more collaboration services (Email, Calendars, Secure IM, VoIP, Archive Hosting, etc.) for developers in order to attract them. Now including a graphical installer, ready-to-flash images for range of devices, continues updates
+	\item Provide support for hand-held devices
+	\item Push for more infrastructure and automated procedures, in order to optimize the development process
+	\item Try to industrialize the FLOSS development process, maybe with support of private companies, as well as to attract companies vendors to use the system
+	\item Try to provide a proper release engineering, already based on stable release of NetBSD 6
+	\item Pushing up the Add-work to promote the project
+	\item Provide also binaries for some architectures, although EdgeBSD is compilable on any
+	\item Make new package versions regularly, associated to maintainers from the community
+	\item Unify developer and contributor efforts in a centralized community, archives or mirrors, so contributions are not lost anymore as it currently happen in NetBSD
+\end{itemize}
+
+
+%------------------------------------------------
+\section{Debian Secrets what I wish I knew before joining Debian}
 %------------------------------------------------
 
 This talk was given at the Free and Open Source Development European Meeting (FOSDEM) in 2013 by Lucas Nussbaum, the current Debian Project Leader. This is an European event centered around FLOSS development, aim to enable developers to meet and to promote the awareness and use this kind of software and form or style of development. Nussbaum discuss about some well defined patterns in the Debian community in its current status.
 
-\subsubsection{Brief description of some patterns identified in Debian project}
+\subsection{Brief description of some patterns identified in Debian project}
 
 As a 20 year old project, people from Debian's community have identified some typical and recurring behaviors that do not help the overall strengthening of the project. Figures such as the project leader are aware of this phenomenon, and make it public with the purpose that the members of the community could be able to avoid them. Factors ranging from the rules governing the project, people involved and their motivation, to development models that are followed, revealing the inner workings of Debian.
 
-\subsubsection{Main goals of Debian community to identify patterns}
+\subsection{Main goals of Debian community to identify patterns}
 
   	\begin{itemize}
   	  \item The establishment of a do-ocracy ruled by a technical committee
@@ -547,8 +625,7 @@ Torvalds, Linus. (1991).
 \end{document}
 
 %------------------------------------------------
-%\subsubsection{Subsubsection 1}
-
+% Format Templates:
 %\begin{figure}[H]
 %\center{\includegraphics[width=0.5\linewidth]{placeholder}}
 %\caption{Example image.}
@@ -567,13 +644,3 @@ Torvalds, Linus. (1991).
 %\lipsum[9] % Dummy text
 %\end{description} 
 %------------------------------------------------
-%\begin{itemize}
-%  \item X
-%\end{itemize}
-%------------------------------------------------
-%\bibitem[OpenBRR.org, 2005]{OpenBRR.org:2005dg}
-%OpenBRR.org. (2005).
-%\newblock Business Readiness Rating for Open Source: A Proposed Open Standard to Facilitate Assessment and Adoption of Open Source Software.
-%\newblock BRR 2005 - RFC 1.
-%-----------------------------------------------
-% \footnote{http://www.html}
