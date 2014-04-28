@@ -2,7 +2,45 @@
 Abstract
 --------
 
-The following report is focused on the goals of the selected projects, including information from the presented projects in the subject. These are talks presented by people involved in FLOSS showing the projects vertically, providing information regarding the history, the goals, the members, the licenses, the related industry, the technologies, the governance, among others.
+The following report is focused on the goals of some remarkable Free Libre Open Source Software (FLOSS) projects, including specific information about them. These are talks held by people involved in FLOSS showing the projects vertically, providing information regarding the history, the goals, the members, the licenses, the related industry, the technologies, the governance, among others.
+
+
+--------------------
+ Introduction
+--------------------
+
+Here will be analyzed a few conferences held by key people involved in some significant FLOSS projects, some of them with some longevity like Debian, and others more recent like EdgeBSD. The speakers have presented the projects providing a wealth of information on the history, evolution and composition thereof, and the idea has been to address these projects from the same point of view, attacking a particular topic.
+
+In general a software project that follows the essential freedoms proposed by the Free Software Foundation\footnote{http://www.gnu.org/philosophy/free-sw.html}, represents a good measure to determine whether the project is free software or not, and the goals are generally consistent with this criterion.
+
+The list of talks that were analyzed, also available on the internet, is as follows:
+
+How the FreeBSD Project Works
+http://www.youtube.com/watch?v=nNkqKdLm1rU
+
+How Open Source Projects Survive Poisonous People
+http://www.youtube.com/watch?v=ZSFDm3UYkeE
+
+SilverStripe CMS
+http://www.youtube.com/watch?v=9hHHfNJAvi8
+
+Camino
+http://www.youtube.com/watch?v=vGTbVz38CNo
+
+Greg Kroah Hartman on the Linux Kernel
+http://www.youtube.com/watch?v=L2SED6sewRw
+
+Mercurial Project
+http://www.youtube.com/watch?v=1sV8Z_Lmpt4
+
+Stefano Zacchiroli on Debian: 20 Years and counting
+http://www.youtube.com/watch?v=yKr2qExNoLY
+
+The EdgeBSD Project
+http://www.youtube.com/watch?v=_D_iaad5rPo
+
+Debian Secrets what I wish I knew before joining Debian
+http://www.youtube.com/watch?v=jyEmjWvoeNo
 
 
 --------------------------------
@@ -359,12 +397,37 @@ Main goals of the Debian project
 8. The EdgeBSD Project
 ======================
 
+Pierre Pronchery gives this speech as EdgeBSD project leader at the FOSDEM 2014 event in Belgium. An interesting initiative with the aim of expanding the potential of the NetBSD system, but in a parallel or separate way, due to the difficulty to contribute to the latter.
+
 Brief description of the EdgeBSD Project
+
+Pronchery claims that his intention is not to fork NetBSD, but he also wants to add many features to this system in the form of contributions, but has not been able to do it because of the limited conditions imposed by current maintainers of the NetBSD project. This situation leads him to produce his own version of system (EdgeBSD), which is based on NetBSD, and intends to remain this way even in upcoming releases in relation to the system core. 
+
 Main goals of the EdgeBSD Project
 
-- FOSDEM 2014
-- Pierre Pronchery
-
+- As a Fork of NetBSD, EdgeBSD claims that its predecessor harms development, due to its cathedral-like type of development
+- The Version Control System in NetBSD (CVS) produces a manual and tedious work, so EdgeBSD looks for improve that
+- Reduce the many restrictions that are present in NetBSD, even to official developers
+- Maintain source packages from NetBSD in specific branches, letting the users to pull from them if desired
+- Some changes introduced in comparison with NetBSD are:
+  . Decentralized VCS with Git
+  . Less restrictive in order to push contributions
+  . More people involved due to its flexibility
+- Rely on a decentralized tool to maintain VCS, without falling into discussions over it, and giving importance to the project mainly
+- Propose an improved development model
+- Test and enable more features in the system
+- Encourage the community for testing of the core code and packages
+- Provide a more useful way to share patches and fixes in general
+- Provide a fun and attractive as a research and development platform while delivering a modern, robust, and industrial-grade system for all ranges of computer devices
+- Provide more collaboration services (Email, Calendars, Secure IM, VoIP, Archive Hosting, etc.) for developers in order to attract them. Now including a graphical installer, ready-to-flash images for range of devices, continues updates
+- Provide support for hand-held devices
+- Push for more infrastructure and automated procedures, in order to optimize the development process
+- Try to industrialize the FLOSS development process, maybe with support of private companies, as well as to attract companies vendors to use the system
+- Try to provide a proper release engineering, already based on stable release of NetBSD 6
+- Pushing up the Add-work to promote the project
+- Provide also binaries for some architectures, although EdgeBSD is compilable on any
+- Make new package versions regularly, associated to maintainers from the community
+- Unify developer and contributor efforts in a centralized community, archives or mirrors, so contributions are not lost anymore as it currently happen in NetBSD
 
 
 ==========================================================
