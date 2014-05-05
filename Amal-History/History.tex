@@ -54,17 +54,24 @@ Gregorio  \textsc{Robles} % Supervisor's Name
 
 \end{titlepage}
 
+\newpage 
+%  table of contents
+%----------------------------------------------------------------------------------------
+\tableofcontents
 
-As final work for the course of “Case Studies I” that related to case II which I made before in Master of Libre software (Universidad Rey Juan Carlos), we are requested to write horizontal  report in one topic we choose in each projects that have been presented in this subject, my choice is about “History".The original work for this study can be found in  \url{https://github.com/MSWL--2013-14/mswl-csii-2014/tree/master/Amal-History}.
+\newpage
+
+As final work for the course of “Case Studies I” that related to case II which I made before in Master of Libre software (Universidad Rey Juan Carlos), we are requested to write horizontal  report in one topic we choose in each projects that have been presented in this subject, my choice is about “History". The original work for this study can be found in  \url{https://github.com/MSWL--2013-14/mswl-csii-2014/tree/master/Amal-History}.
 
 \section{History of Free and Open Source Software}
 
 Long time in the early 1950's before the term “Open Source” was used, software was developed by loose associations of programmers and freely exchanged. Organizations such as SHARE and DECUS developed much of the software that computer hardware companies bundled with their hardware offerings. At that time computer companies were in the hardware business; anything that reduced software cost and made more programs available made the hardware companies more competitive.
+
 \paragraph{Successes for Free Software}
 
 In 1983, Richard Stallman launched the GNU Project to write a complete operating system.
  free from constraints on use of its source code. Stallman also published the GNU Manifesto, in 1985, to outline the GNU project's purpose and explain the importance of free software. Soon after the launch, he coined the term "free software" and founded the Free Software Foundation to promote the concept and a free software definition
-  \footnote
+ \footnote
  {The definition had two points:
 \begin{enumerate}
  \item "The word "free" in our name does not refer to price; it refers to freedom. First, the freedom to copy a program and redistribute it to your neighbors, so that they can use it as well as you. Second, the freedom to change a program, so that you can control it instead of it controlling you; for this, the source code must be made available to you."
@@ -84,28 +91,28 @@ In 1983, Richard Stallman launched the GNU Project to write a complete operating
 Until this point, the GNU project's lack of a kernel meant that no complete free-software operating systems existed. \\The combination of the almost-finished GNU operating system and the Linux kernel made the first complete free-software operating system. Among Linux distributions, Debian GNU/Linux, begun by Ian Murdock in 1993.
 \paragraph{Open Source}
 In 1997, Eric Raymond published The Cathedral and the Bazaar, a reflective analysis of the hacker community and free-software principles. The paper received significant attention in early 1998 and was one factor in motivating Netscape Communications Corporation to release their popular Netscape Communicator Internet suite as free software. 
-In February 1998, Raymond made the first public call to the free software community to adopt the new term. The Open Source Initiative \footnote{\url{http://opensource.org/}} was formed shortly thereafter by Eric Raymond and Bruce Perens.\\
+In February 1998, Raymond made the first public call to the free software community to adopt the new term. The Open Source Initiative\footnote{\url{http://opensource.org/}} was formed shortly thereafter by Eric Raymond and Bruce Perens.\\
 Starting in the beginning of the 2000s, a number of companies began to publish a small parts of their source code to claim they were open source, while keeping key parts closed. This led to the development of the now widely used terms free open-source software and commercial open-source software to distinguish between truly open and hybrid forms of open source.
 
 \section{Briefs about each project and their history}
 %------------------------------------------------
 \subsection{FreeBSD Project }
- Homepage :\url {https://www.freebsd.org/}\\
+ Homepage :\url{https://www.freebsd.org/}\\
 
 \subparagraph{What is the Free BSD}
 
-FreeBSD is an operating system for desktops, laptops, servers, and embedded systems with support for a large number of platforms. which focuses on features, speed, and stability. It is derived from BSD, the version of UNIX developed at the University of California, Berkeley. It is developed and maintained by a large community.\\
+FreeBSD is an operating system for desktops, laptops, servers, and embedded systems with support for a large number of platforms which focuses on features, speed, and stability. It is derived from BSD, the version of UNIX developed at the University of California, Berkeley. It is developed and maintained by a large community.\\
 
 \textit{The differences between FreeBSD and NetBSD, OpenBSD}
 \begin{itemize}
-\item OpenBSD aims for operating system security above all else. The OpenBSD team wrote ssh \footnote{\url {http://www.freebsd.org/cgi/man.cgi?query=ssh&sektion=1}} and pf \footnote{\url{http://www.freebsd.org/cgi/man.cgi?query=pf&sektion=4}}, which have both been ported to FreeBSD.
+\item OpenBSD aims for operating system security above all else. The OpenBSD team wrote ssh\footnote{\url{http://www.freebsd.org/cgi/man.cgi?query=ssh&sektion=1}} and pf\footnote{\url{http://www.freebsd.org/cgi/man.cgi?query=pf&sektion=4}}, which have both been ported to FreeBSD.
 \item NetBSD aims to be easily ported to other hardware platforms.
 \item  DragonFly BSD is a fork of FreeBSD 4.8 that has since developed many interesting features of its own, including the HAMMER file system and support for user-mode ``vkernels".
 \end{itemize}
        \begin{figure}
    \centering
         \includegraphics[scale=0.4]{./freebsd.png}
-     \caption{ The time line shows that the span of a single release generation of FreeBSD lasts around 5 years.}
+     \caption{ The time line shows that the span of a single release generation of FreeBSD lasts around 5 years. Source: FIXME}
       \end{figure}
 
 
@@ -113,7 +120,7 @@ FreeBSD is an operating system for desktops, laptops, servers, and embedded syst
 The FreeBSD Project had its genesis in the early part of 1993, partially as an outgrowth of the Unofficial 386BSD Patchkit by the patchkit's last 3 coordinators: Nate Williams, Rod Grimes and Jordan Hubbard.
 
 The first distribution was FreeBSD 1.0, released in December of 1993. This was based on the 4.3BSD-Lite (“Net/2”) tape from U.C. Berkeley, with many components also provided by 386BSD and the Free Software Foundation. It was a fairly reasonable success for a first offering, and they followed it with the highly successful FreeBSD 1.1 release in 1994.
- After a lawsuit between then Unix copyright owner Unix System Laboratories, and the University of California, Berkeley, the FreeBSD project re-engineered most of the system using the 4.4BSD-Lite release from Berkeley, which, owing to the lawsuit, had none of the AT\&T source code earlier BSD versions contained, making it an un bootable operating system. Following much work, the unencumbered outcome was released as FreeBSD 2.0 in January 1995.
+ After a lawsuit between then Unix copyright owner Unix System Laboratories, and the University of California, Berkeley, the FreeBSD project re-engineered most of the system using the 4.4BSD-Lite release from Berkeley, which, owing to the lawsuit, had none of the AT\&T source code earlier BSD versions contained, making it an not bootable operating system. Following much work, the unencumbered outcome was released as FreeBSD 2.0 in January 1995.
 Since that time, FreeBSD has made a series of releases each time improving the stability, speed, and feature set of the previous version.\\
 In the following image shows the time line that the span of a single release generation of FreeBSD lasts around 5 years
 \pagebreak
@@ -127,13 +134,13 @@ Mercurial is a cross-platform, distributed revision control tool for software de
     First announced Mercurial on 19 April 2005 by Mackall. The impetus for this was the announcement earlier that month by Bitmover that they were withdrawing the free version of BitKeeper. Mackall decided to write a distributed VCS as a replacement for use with the Linux kernel.
 Mercurial started after the project {\bf Gi}t which is initiated by Linus Torvalds with similar aims.\footnote{ The goals:\url{http://lkml.iu.edu//hypermail/linux/kernel/0504.2/0670.html}
 \begin{itemize}
-\item - to initially be as simple (and thereby hackable) as possible
+\item to initially be as simple (and thereby hackable) as possible
 
-\item- to be as scalable as possible.
+\item to be as scalable as possible.
 
-\item- to be memory, disk, and bandwidth efficient.
+\item to be memory, disk, and bandwidth efficient.
 
-\item- to be able to do "clone/branch and pull/sync" style development. \end{itemize}
+\item to be able to do "clone/branch and pull/sync" style development. \end{itemize}
 }
 The Linux kernel project decided to use Git rather than Mercurial, but Mercurial is now used by many other projects .
 
@@ -141,14 +148,14 @@ The Linux kernel project decided to use Git rather than Mercurial, but Mercurial
 
 \subsection{SilverStripe CMS} 
 Webpage \url{http://www.silverstripe.com/}\\
-   SilverStripe is a free and open source Content Management System (CMS) and Framework for creating and maintaining websites and web applications. It provides an out of the box web-based administration panel that enables users to make modifications to parts of the website, which includes a WYSIWYG \footnote{ An acronym for "What You See Is What You Get"}website editor. The core of the software is SilverStripe Framework, a PHP Web application framework.
+   SilverStripe is a free and open source Content Management System (CMS) and Framework for creating and maintaining websites and web applications. It provides an out of the box web-based administration panel that enables users to make modifications to parts of the website, which includes a WYSIWYG\footnote{ An acronym for "What You See Is What You Get"}website editor. The core of the software is SilverStripe Framework, a PHP Web application framework.
   
   \subparagraph{History and Time-line}\footnote{http://www.silverstripe.org/our-history/}
 \begin{itemize}
 \item SilverStripe Ltd. was founded in 2000 in Wellington, New Zealand, by Tim Copeland, Sam Minnée, and Sigurd Magnusson. The three originally developed and marketed a closed-source PHP4-based CMS to local small and medium-sized business customers.later they have grown from three staff to over 40.
 \item In late 2005, the business decided to rebuild this CMS from scratch in PHP5,
 \item In 2006: SilverStripe CMS became a member of Wellington’s Creative HQ business incubator.
-\item SilverStripe 2.0 released in 2007 publicly as free and open source software under BSD license.The project was accepted into the Google Summer of Code, one of only 16 software projects to do so.
+\item SilverStripe 2.0 released in 2007 publicly as free and open source software under BSD license. The project was accepted into the Google Summer of Code, one of only 16 software projects to do so.
 \item In late 2008, SilverStripe split its main website into silverstripe.com, to act as the home for the company behind the software, and silverstripe.org, to act as the home for the software and its open source community.
 \item SilverStripe in 2010, claimed the software had been downloaded 250,000 times since first released.
 \item In 2010, CMS gained Microsoft SQL Server support, and became the first open source web application to become Microsoft Certified. Due to popular demand from the community, two books on SilverStripe CMS were released: one in German, and one in English.
@@ -189,7 +196,7 @@ Camino started with some work back in late 2001 that \textit{Vidur Apparao} and 
  \item Camino 2.0 ,released in 2009, It was the first Camino release to be Acid2-compliant.
  \item Camino 2.1 ,released in 2011, the developers announced plans to transition to WebKit for future versions, as Mozilla had dropped support for Gecko embedding.
  \item Camino 2.1.2 released in 2012 and the final release.
-\item On May 30, 2013, Stuart Morgan announced on Camino Blog that Camino has reached its end and is no longer being developed. \footnote{http://caminobrowser.org/blog/2013/}.
+\item On May 30, 2013, Stuart Morgan announced on Camino Blog that Camino has reached its end and is no longer being developed.\footnote{http://caminobrowser.org/blog/2013/}.
  \end{itemize}
 
 %==============================================================
@@ -232,13 +239,9 @@ In 1991 	Linus conceives the idea of Linux and announces the project in a Usenet
 
 
 
-\newpage
 %==============================================================
 
-\newpage 
-%  table of contents
-%----------------------------------------------------------------------------------------
-\tableofcontents
+
 \newpage
 %================================================================================
 
@@ -251,22 +254,22 @@ In 1991 	Linus conceives the idea of Linux and announces the project in a Usenet
   
    \bibitem{notes} Timeline of OpenBSD\\ \url{ http://en.wikipedia.org/wiki/OpenBSD_timeline}
    \bibitem{notes} Eric Bangeman - 2004 {Interview with Camino Project head Mike Pinkerton}\\        \url{http://arstechnica.com/apple/2004/09/mac-20040923/}
-   \bibitem{notes} Free BSD webpage \\ \url {https://www.freebsd.org/}.
+   \bibitem{notes} Free BSD webpage \\ \url{https://www.freebsd.org/}.
     \bibitem {notes} mercurial webpage \url{http://mercurial.selenic.com/}.
    \bibitem{notes}SilverStripe webpage \\\url{http://www.silverstripe.com/}.
    \bibitem{notes}Camino webpage\\  \url{http://caminobrowser.org/}
 
    \bibitem{notes}Linux Kernel webpage \\ \url{https://www.kernel.org/}
    \bibitem {notes}\url{http://en.wikipedia.org/wiki/History_of_the_Linux_kernel}
-   \bibitem{notes} \url {http://kernelnewbies.org/LinuxChanges}
-      \bibitem{notes} History of Linux by Ragib Hasan\\ \url {http://www.ragibhasan.com/linux/}
-   \bibitem{notes}Changes done in each Linux kernel release\\ \url {http://kernelnewbies.org/LinuxChanges}
-      \bibitem{notes}  LINUX's History by Linus Torvalds\\ \url {http://www.cs.cmu.edu/~awb/linux.history.html}
+   \bibitem{notes} \url{http://kernelnewbies.org/LinuxChanges}
+      \bibitem{notes} History of Linux by Ragib Hasan\\ \url{http://www.ragibhasan.com/linux/}
+   \bibitem{notes}Changes done in each Linux kernel release\\ \url{http://kernelnewbies.org/LinuxChanges}
+      \bibitem{notes}  LINUX's History by Linus Torvalds\\ \url{http://www.cs.cmu.edu/~awb/linux.history.html}
  \bibitem{notes}How the FreeBSD Project Works\\ \url{http://www.youtube.com/watch?v=nNkqKdLm1rU}
  \bibitem{notes} SilverStripe CMS\\ \url{http://www.youtube.com/watch?v=9hHHfNJAvi8}
  \bibitem{notes}Camino\\ \url{http://www.youtube.com/watch?v=vGTbVz38CNo}
  \bibitem{notes} Greg Kroah Hartman on the Linux Kernel\\ \url{http://www.youtube.com/watch?v=L2SED6sewRw}
- \bibitem{notes} Mercurial Project \\\url {http://www.youtube.com/watch?v=1sV8Z_Lmpt4}
+ \bibitem{notes} Mercurial Project \\\url{http://www.youtube.com/watch?v=1sV8Z_Lmpt4}
  
   \end {thebibliography}
 
